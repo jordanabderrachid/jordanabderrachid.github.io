@@ -47,5 +47,7 @@ Le Go possède une librairie standard riche permettant au maximum de s'affranchi
 
 # Pour aller plus loin
 [L'article wikipédia sur le Go](https://en.wikipedia.org/wiki/Go_(programming_language))
+
 [Présentation du langage par Google](https://talks.golang.org/2012/splash.article)
+
 [La documentation de la librairie standard](https://golang.org/pkg/)
