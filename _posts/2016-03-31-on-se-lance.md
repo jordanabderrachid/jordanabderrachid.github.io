@@ -7,17 +7,17 @@ categories: golang install
 
 # On fait quoi ?
 
-Nous allons apprendre dans cet article comment installer le langage Go sur sa machine et écrire notre premier programme, le grand classique "hello world". Je prendrai l'exemple de l'installation sur le système d'exploitation `OS X` mais la procédure est similaire sur tous les systèmes de type `Unix`. La procédure peut cepedant varier pour les utilisateurs de `Windows`.
+Nous allons apprendre dans cet article comment installer le langage Go sur sa machine et écrire notre premier programme, le grand classique "hello world". Je prendrai l'exemple de l'installation sur le système d'exploitation **OS X** mais la procédure est similaire sur tous les systèmes de type **Unix**. La procédure peut cependant varier pour les utilisateurs de **Windows**.
 
 Nous verrons également comment compiler notre programme pour une architecture et un système d'exploitation spécifique.
 
 # Téléchargement
 
-La première étape consite à télécharger le package contenant tous les éléments nécessaires au langage notamment le compilateur sur le [site officiel](https://golang.org/dl/). Le site propose trois packages en fonction de son système d'exploitation et également les fichiers sources afin de compiler pour une architecture plus exotique comme l'architecture `ARM` par exemple. Je recommande de télécharger la dernière version stable (1.6 actuellement).
+La première étape consiste à télécharger le package contenant tous les éléments nécessaires au langage notamment le compilateur sur le [site officiel](https://golang.org/dl/). Le site met à disposition un installeur dédié à chaque système d'exploitation et également les fichiers sources afin de compiler pour une architecture plus exotique comme l'architecture **ARM** par exemple. Je recommande de télécharger la dernière version stable (1.6 actuellement).
 
 # Test et configuration
 
-Pour `Windows` et `OS X`, l'installation par l'exécutable ne devrait pas demander de configuration ultérieure, pour tester l'installation il convient de lancer un terminal et de taper la commande `go version`. Le numéro de version devrait s'afficher.
+Pour **Windows** et **OS X**, l'installation par l'exécutable ne devrait pas demander de configuration ultérieure, pour tester l'installation il suffit de lancer un terminal et de taper la commande `go version`. Le numéro de version devrait s'afficher.
 
 ``` shell
 $ go version
@@ -26,7 +26,7 @@ go version go1.6 darwin/amd64
 
 # Le GOPATH
 
-Il convient de spécifier une variable d'environnement appelée `GOPATH` qui correspond au répertoire de travail de Go. C'est dans ce répertoire que se trouvera le code source ainsi que les fichiers binaires générés par le compilateur. Ce répertoire doit contenir un sous-répertoire appelé `src` qui contiendra le code source des projets Go.
+Il convient de spécifier une variable d'environnement appelée `GOPATH` qui correspond au répertoire de travail de Go. C'est dans ce répertoire que se trouvera le code source ainsi que les fichiers binaires générés par le compilateur. Ce répertoire doit contenir un sous-répertoire appelé _src_ qui contiendra le code source des projets Go.
 
 ``` shell
 $ export GOPATH=$HOME/go
@@ -36,7 +36,7 @@ $ mkdir ./src
 
 # Hello world !
 
-Nous allons maintenant écrire notre premier programme Go, pour cela créons un répertoire appelé `hello` et notre premier fichier `main.go`.
+Nous allons maintenant écrire notre premier programme Go, pour cela créons un répertoire appelé _hello_ et notre premier fichier _main.go_.
 
 ``` shell
 $ cd $GOPATH/src
@@ -44,9 +44,10 @@ $ mkdir ./hello && cd ./hello
 $ touch main.go
 ```
 
-Le fichier `main.go` contient le code source de notre premier programme.
+Le fichier _main.go_ contient le code source de notre premier programme.
 
 ``` golang
+// main.go
 package main
 
 import "fmt"
@@ -73,11 +74,11 @@ $ file hello
 hello: Mach-O 64-bit executable x86_64
 ```
 
-Le fichier `hello` est bien un exécutable compatible avec notre système d'exploitation.
+Le fichier _hello_ est bien un exécutable compatible avec notre système d'exploitation.
 
 # J'ai un Raspberry Pi
 
-Les variables d'environnement `GOARCH` et `GOOS` permettent de spécifier l'architecture et le système d'exploitation respectivement. L'exemple suivant compile notre programme pour l'architecture `ARM` sous `Linux`.
+Les variables d'environnement `GOARCH` et `GOOS` permettent de spécifier l'architecture et le système d'exploitation respectivement. L'exemple suivant compile notre programme pour l'architecture **ARM** sous **Linux**.
 
 ``` shell
 $ GOARCH=arm $GOOS=linux go build
