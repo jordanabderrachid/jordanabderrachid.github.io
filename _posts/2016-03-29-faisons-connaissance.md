@@ -9,7 +9,7 @@ categories: golang getting_started
 
 Le langage Go (aussi appelé Golang pour plus de commodité) est un langage de programmation système développé par Google depuis 2007 sous la direction de 3 programmeurs très connus, **Robert Griesemer**, **Rob Pike** et **Ken Thompson**.
 
-Rob Pike et Ken Thompson sont nottamment connus pour leux travaux sur le système d'encodage `UTF-8` et les systèmes d'exploitation de type `Unix`.
+Rob Pike et Ken Thompson sont notamment connus pour leurs travaux sur le système d'encodage `UTF-8` et les systèmes d'exploitation de type `Unix`.
 
 Le langage Go dispose d'une mascotte : le gopher (Géomyidés ou rat à poche en français).
 
@@ -19,7 +19,7 @@ La première version du Go est sortie en 2009 et la dernière release 1.6 date d
 
 # Pourquoi un nouveau langage ?
 
-L'objectif de la création de ce nouveau langage est d'être à la fois très puissant, mais aussi simple et intuitif à utiliser. Golang se veut être un langage fun où le programmeur prend plaisair à l'utiliser. Ce langage arbore donc une syntaxe simple et légère.
+L'objectif de la création de ce nouveau langage est d'être à la fois très puissant, mais aussi simple et intuitif à utiliser. Golang se veut être un langage fun où le programmeur prend plaisir à l'utiliser. Ce langage arbore donc une syntaxe simple et légère.
 
 Le Go a été développé pour simplifier la vie du programmeur sur de nombreux points du cycle de vie du logiciel qu'il conçoit, ainsi le langage veut améliorer les points suivants :
 
@@ -37,11 +37,11 @@ L'un des objectifs du Go est également de proposer des mécanismes permettant d
 
 Au final, le Go est un langage compilé, cela signifie que son code source est traduit en langage machine pour un programme, appelé compilateur. Le résultat de la compilation est un exécutable pouvant être traité par l'ordinateur.
 
-Le Go est un langage à typage statique fort, celà signifie qu'une variable ne peut pas changer de type durant l'exécution du programme et qu'il n'y a pas de conversion implicite de type. Ce choix de conception impose une plus grande rigidité au programmeur mais permet de réduire le nombre d'erreurs lors de l'exécution du programme.
+Le Go est un langage à typage statique fort, cela signifie qu'une variable ne peut pas changer de type durant l'exécution du programme et qu'il n'y a pas de conversion implicite de type. Ce choix de conception impose une plus grande rigidité au programmeur mais permet de réduire le nombre d'erreurs lors de l'exécution du programme.
 
 Le Go possède un garbage collector, ou ramasse miettes en français. C'est un mécanisme permettant de gérer automatiquement la mémoire utilisée par le logiciel et de libérer la mémoire précédemment allouée lorsqu'elle n'est plus utilisée.
 
-Le Go est un langage orienté objet mais dépourvu de la notion d'héritage. Le Go utilise la composition pour remplacer cette notion d'héritage. Nous verrons dans un futur article ce que celà signifie.
+Le Go est un langage orienté objet mais dépourvu de la notion d'héritage. Le Go utilise la composition pour remplacer cette notion d'héritage. Nous verrons dans un futur article ce que cela signifie.
 
 Le Go possède une librairie standard riche permettant au maximum de s'affranchir de l'utilisation de dépendances externes.
 

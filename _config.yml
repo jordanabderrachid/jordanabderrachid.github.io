@@ -9,7 +9,7 @@
 title: Le langage Golang
 email: jabderrachid@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ce blog présente le langage Go, du pourquoi au comment ainsi que les nombreuses possibilitées offertes par ce nouveau langage crée par Google
+  Ce blog présente le langage Go, du pourquoi au comment ainsi que les nombreuses possibilités offertes par ce nouveau langage crée par Google
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jordanabderrachid.github.io" # the base hostname & protocol for your site
 twitter_username: jesuisunelegend
